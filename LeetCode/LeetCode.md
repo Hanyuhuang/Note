@@ -16,9 +16,14 @@
 | [10.正则表达式匹配](#10正则表达式匹配)                   | [10.正则表达式匹配](<https://leetcode-cn.com/problems/regular-expression-matching/>) |
 | [11.盛最多水的容器](#11盛最多水的容器)                   | [11.盛最多水的容器](<https://leetcode-cn.com/problems/container-with-most-water/>) |
 | [12.整数转罗马数字](#12整数转罗马数字)                   | [12.整数转罗马数字](https://leetcode-cn.com/problems/integer-to-roman/) |
-| [13. 罗马数字转整数](#13罗马数字转整数)                  | [13. 罗马数字转整数](https://leetcode-cn.com/problems/roman-to-integer/) |
-| [14. 最长公共前缀](#14最长公共前缀)                      | [14. 最长公共前缀](https://leetcode-cn.com/problems/longest-common-prefix/) |
-| [15. 三数之和](#15三数之和)                              | [15. 三数之和](https://leetcode-cn.com/problems/3sum/)       |
+| [13.罗马数字转整数](#13罗马数字转整数)                   | [13.罗马数字转整数](https://leetcode-cn.com/problems/roman-to-integer/) |
+| [14.最长公共前缀](#14最长公共前缀)                       | [14.最长公共前缀](https://leetcode-cn.com/problems/longest-common-prefix/) |
+| [15.三数之和](#15三数之和)                               | [15.三数之和](https://leetcode-cn.com/problems/3sum/)        |
+| [16.最接近的三数之和](#16最接近的三数之和)               | [16.最接近的三数之和](https://leetcode-cn.com/problems/3sum-closest/) |
+| [17.电话号码的字母组合](#17电话号码的字母组合)           | [17.电话号码的字母组合](https://leetcode-cn.com/problems/letter-combinations-of-a-phone-number/) |
+| [18.四数之和](#18四数之和)                               | [18.四数之和](https://leetcode-cn.com/problems/4sum/)        |
+| [19.删除链表的倒数第N个节点](#19删除链表的倒数第n个节点) | [19.删除链表的倒数第N个节点](https://leetcode-cn.com/problems/remove-nth-node-from-end-of-list/) |
+| [20.有效的括号](#20有效的括号)                           | [20.有效的括号](https://leetcode-cn.com/problems/valid-parentheses/) |
 
 ### 1.两数之和
 
@@ -944,6 +949,299 @@ class Solution {
             }
         }
         return list;
+    }
+}
+```
+
+### 16.最接近的三数之和
+
+#### 题目描述
+
+给定一个包括 *n* 个整数的数组 `nums` 和 一个目标值 `target`。找出 `nums` 中的三个整数，使得它们的和与 `target` 最接近。返回这三个数的和。假定每组输入只存在唯一答案。
+
+```
+例如，给定数组 nums = [-1，2，1，-4], 和 target = 1.
+
+与 target 最接近的三个数的和为 2. (-1 + 2 + 1 = 2).
+```
+
+#### 题解
+
+```java
+class Solution {
+    public int threeSumClosest(int[] nums, int target) {
+        int i=0,j=0,cur=0;
+        int res = nums[0]+nums[1]+nums[2];
+        Arrays.sort(nums); // 排序
+        for(int k=0;k<nums.length-2;k++){
+            i = k+1;
+            j = nums.length-1;
+            while(i<j){
+                // 当前三数之和
+                cur = nums[k]+nums[i]+nums[j];
+                // 当前三数之和如果比最接近的还接近 更新
+                if(Math.abs(cur-target)<Math.abs(res-target)) res = cur;
+                if(cur>target) j--;
+                else if(cur<target) i++;
+                else return target;
+            }
+        }
+        return res;
+    }
+}
+```
+
+### 17.电话号码的字母
+
+#### 题目描述
+
+给定一个仅包含数字 `2-9` 的字符串，返回所有它能表示的字母组合。
+
+给出数字到字母的映射如下（与电话按键相同）。注意 1 不对应任何字母。
+
+![](images/question_17.png)
+
+**示例:**
+
+```
+输入："23"
+输出：["ad", "ae", "af", "bd", "be", "bf", "cd", "ce", "cf"].
+```
+
+**说明:**
+尽管上面的答案是按字典序排列的，但是你可以任意选择答案输出的顺序。
+
+#### 题解
+
+```java
+class Solution {
+    Map<Character,String> map = new HashMap();
+    {
+        map.put('2',"abc");
+        map.put('3',"def");
+        map.put('4',"ghi");
+        map.put('5',"jkl");
+        map.put('6',"mno");
+        map.put('7',"pqrs");
+        map.put('8',"tuv");
+        map.put('9',"wxyz");
+    }
+    public List<String> letterCombinations(String digits) {
+        List<String> list = new ArrayList();
+        if(digits==null || digits.length()==0) return list;
+        dfs(list,digits,"",0);
+        return list;
+    }
+    
+    public void dfs(List<String> list,String digits,String str,int index){
+        // 遍历结束
+        if(index==digits.length()){
+            list.add(new String(str));
+            return;
+        }
+        // 给定字符串 第index位上的字符
+        char key = digits.charAt(index);
+        // 遍历这个字符对应的字符串
+        for(int i=0;i<map.get(key).length();i++){
+            dfs(list,digits,str+map.get(key).charAt(i),index+1);
+        }
+    }
+}
+```
+
+### 18.四数之和
+
+#### 题目描述
+
+给定一个包含 *n* 个整数的数组 `nums` 和一个目标值 `target`，判断 `nums` 中是否存在四个元素 *a，**b，c* 和 *d* ，使得 *a* + *b* + *c* + *d* 的值与 `target` 相等？找出所有满足条件且不重复的四元组。
+
+**注意：**
+
+答案中不可以包含重复的四元组。
+
+**示例：**
+
+```
+给定数组 nums = [1, 0, -1, 0, -2, 2]，和 target = 0。
+
+满足要求的四元组集合为：
+[
+  [-1,  0, 0, 1],
+  [-2, -1, 1, 2],
+  [-2,  0, 0, 2]
+]
+```
+
+#### 题解
+
+```java
+class Solution {
+    public List<List<Integer>> fourSum(int[] nums, int target) {
+        List<List<Integer>> list = new ArrayList();
+        if(nums==null || nums.length<4) return list;
+        int k=0,t=0,cur=0;
+        Arrays.sort(nums);
+        // nums[i] 不变 其他三个值变
+        for(int i=0;i<nums.length-3;i++){
+            // 去重
+            if(i>0 && nums[i]==nums[i-1]) continue;
+            // nums[j]不变 其他两个值变
+            for(int j=i+1;j<nums.length-2;j++){
+                // 去重
+                if(j>i+1 && nums[j]==nums[j-1]) continue;
+                k = j+1;
+                t = nums.length-1;
+                while(k<t){
+                    // 当前四数之和
+                    cur = nums[i]+nums[j]+nums[k]+nums[t];
+                    if(cur>target) t--;
+                    else if(cur<target) k++;
+                    else {
+                        list.add(Arrays.asList(nums[i],nums[j],nums[k],nums[t]));
+                        // 去重
+                        while(k<t && nums[k]==nums[k+1]) k++;
+                        while(k<t && nums[t]==nums[t-1]) t--;
+                        k++;
+                        t--;
+                    }
+                }
+            }
+        }
+        return list;
+    }
+}
+```
+
+### 19.删除链表的倒数第N个节点
+
+#### 题目描述
+
+给定一个链表，删除链表的倒数第 *n* 个节点，并且返回链表的头结点。
+
+**示例：**
+
+```
+给定一个链表: 1->2->3->4->5, 和 n = 2.
+
+当删除了倒数第二个节点后，链表变为 1->2->3->5.
+```
+
+**说明：**
+
+给定的 *n* 保证是有效的。
+
+**进阶：**
+
+你能尝试使用一趟扫描实现吗？
+
+#### 题解
+
+```java
+/**
+ * Definition for singly-linked list.
+ * public class ListNode {
+ *     int val;
+ *     ListNode next;
+ *     ListNode(int x) { val = x; }
+ * }
+ */
+class Solution {
+    public ListNode removeNthFromEnd(ListNode head, int n) {
+        if(head==null) return null;
+        ListNode slow = head,fast=head.next,pre=null;
+        // 快指针先走n-1步
+        for(int i=0;i<n-1;i++){
+            fast = fast.next;
+        }
+        // 两指针同时走 并记录慢指针的上一个
+        while(fast!=null){
+            pre = slow;    // 保存前一个
+            slow = slow.next;
+            fast = fast.next;
+        }
+        // 删除的节点为头结点
+        if(pre==null) return slow==null?null:slow.next;
+        pre.next = slow.next;
+        return head;
+    }
+}
+```
+
+### 20.有效的括号
+
+#### 题目描述
+
+给定一个只包括 `'('`，`')'`，`'{'`，`'}'`，`'['`，`']'` 的字符串，判断字符串是否有效。
+
+有效字符串需满足：
+
+1. 左括号必须用相同类型的右括号闭合。
+2. 左括号必须以正确的顺序闭合。
+
+注意空字符串可被认为是有效字符串。
+
+**示例 1:**
+
+```
+输入: "()"
+输出: true
+```
+
+**示例 2:**
+
+```
+输入: "()[]{}"
+输出: true
+```
+
+**示例 3:**
+
+```
+输入: "(]"
+输出: false
+```
+
+**示例 4:**
+
+```
+输入: "([)]"
+输出: false
+```
+
+**示例 5:**
+
+```
+输入: "{[]}"
+输出: true
+```
+
+#### 题解
+
+```java
+class Solution {
+    Map<Character,Character> map = new HashMap();
+    {
+        map.put(')','(');
+        map.put('}','{');
+        map.put(']','[');
+    }
+    public boolean isValid(String s) {
+        Stack<Character> stack = new Stack();
+        // 遍历字符串
+        for(char c : s.toCharArray()){
+            // 三种左括号直接进栈
+            if(c=='(' || c=='{' || c=='[') stack.push(c);
+            // 三种右括号 匹配栈顶元素
+            else {
+                // 空栈遇到右括号 直接返回false
+                if(stack.isEmpty()) return false;
+                // 匹配成功 弹出栈顶元素
+                else if(map.get(c)==stack.peek()) stack.pop();
+                // 匹配失败 加入队列
+                else stack.push(c);
+            }
+        }
+        return stack.isEmpty();
     }
 }
 ```
