@@ -24,6 +24,11 @@
 | [18.四数之和](#18四数之和)                               | [18.四数之和](https://leetcode-cn.com/problems/4sum/)        |
 | [19.删除链表的倒数第N个节点](#19删除链表的倒数第n个节点) | [19.删除链表的倒数第N个节点](https://leetcode-cn.com/problems/remove-nth-node-from-end-of-list/) |
 | [20.有效的括号](#20有效的括号)                           | [20.有效的括号](https://leetcode-cn.com/problems/valid-parentheses/) |
+| [21.合并两个有序链表](#21合并两个有序链表)               | [21.合并两个有序链表](https://leetcode-cn.com/problems/merge-two-sorted-lists/) |
+| [22.括号生成](#22括号生成)                               | [22.括号生成](https://leetcode-cn.com/problems/generate-parentheses/) |
+| [23.合并K个排序链表](#23合并k个排序链表)                 | [23.合并K个排序链表](https://leetcode-cn.com/problems/merge-k-sorted-lists/) |
+| [24.两两交换链表中的节点](#24两两交换链表中的节点)       | [24.两两交换链表中的节点](https://leetcode-cn.com/problems/swap-nodes-in-pairs/) |
+| [25.k个一组翻转链表](#25k个一组翻转链表)                 | [25.k个一组翻转链表](https://leetcode-cn.com/problems/reverse-nodes-in-k-group/) |
 ### 1.两数之和
 
 #### 题目描述
@@ -1241,6 +1246,272 @@ class Solution {
             }
         }
         return stack.isEmpty();
+    }
+}
+```
+
+### 21.合并两个有序链表
+
+#### 题目描述
+
+将两个有序链表合并为一个新的有序链表并返回。新链表是通过拼接给定的两个链表的所有节点组成的。 
+
+**示例：**
+
+```
+输入：1->2->4, 1->3->4
+输出：1->1->2->3->4->4
+```
+
+#### 题解
+
+```java
+/**
+ * Definition for singly-linked list.
+ * public class ListNode {
+ *     int val;
+ *     ListNode next;
+ *     ListNode(int x) { val = x; }
+ * }
+ */
+class Solution {
+    public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
+        ListNode node = new ListNode(0);
+        ListNode cur = node;
+        while(l1!=null && l2!=null){
+            // 接到数值较小的链表上
+            cur.next = l1.val<=l2.val ? l1 : l2;
+            // 哪一个被接上去 需要向后移动
+            l1 = cur.next==l1 ? l1.next : l1;
+            l2 = cur.next==l2 ? l2.next : l2;
+            cur = cur.next;
+        }
+        // 处理剩余
+        if(l1!=null) cur.next = l1;
+        if(l2!=null) cur.next = l2;
+        return node.next;
+    }
+}
+```
+
+### 22.括号生成
+
+#### 题目描述
+
+给出 *n* 代表生成括号的对数，请你写出一个函数，使其能够生成所有可能的并且**有效的**括号组合。
+
+例如，给出 *n* = 3，生成结果为：
+
+```
+[
+  "((()))",
+  "(()())",
+  "(())()",
+  "()(())",
+  "()()()"
+]
+```
+
+#### 题解
+
+```java
+class Solution {
+    public List<String> generateParenthesis(int n) {
+        List<String> list = new ArrayList();
+        if(n<1) return list;
+        dfs(list,"",0,0,n);
+        return list;
+    }
+    // i :"("出现的次数  j：")"出现的次数
+    public void dfs(List<String> list,String str,int i,int j,int n){
+        if(i==n && j==n){
+            list.add(str);
+            return;
+        } 
+        // 添加左括号
+        if(i<n) dfs(list,str+"(",i+1,j,n);
+        // 当左括号数量大于右括号时 添加右括号
+        if(i>j) dfs(list,str+")",i,j+1,n);
+    }
+}
+```
+
+### 23.合并K个排序链表
+
+#### 题目描述
+
+合并 *k* 个排序链表，返回合并后的排序链表。请分析和描述算法的复杂度。
+
+**示例:**
+
+```
+输入:
+[
+  1->4->5,
+  1->3->4,
+  2->6
+]
+输出: 1->1->2->3->4->4->5->6
+```
+
+#### 题解
+
+```java
+/**
+ * Definition for singly-linked list.
+ * public class ListNode {
+ *     int val;
+ *     ListNode next;
+ *     ListNode(int x) { val = x; }
+ * }
+ */
+class Solution {
+    public ListNode mergeKLists(ListNode[] lists) {
+        if(lists==null || lists.length==0) return null;
+        ListNode node = lists[0];
+        // 循环合并两个链表
+        for(int i=1;i<lists.length;i++){
+            node = merge(lists[i],node);
+        }
+        return node;
+    }
+    // 合并两个链表
+    public ListNode merge(ListNode l1,ListNode l2){
+        ListNode node = new ListNode(0);
+        ListNode cur = node;
+        while(l1!=null && l2!=null){
+            // 拼接较小的链表
+            cur.next = l1.val<=l2.val ? l1 : l2;
+            // 被拼接的链表移动
+            l1 = cur.next==l1? l1.next : l1;
+            l2 = cur.next==l2? l2.next : l2;
+            cur = cur.next;
+        }
+        // 合并剩余部分
+        if(l1!=null) cur.next = l1;
+        if(l2!=null) cur.next = l2;
+        return node.next;
+    }
+}
+```
+
+### 24.两两交换链表中的节点
+
+#### 题目描述
+
+给定一个链表，两两交换其中相邻的节点，并返回交换后的链表。
+
+**你不能只是单纯的改变节点内部的值**，而是需要实际的进行节点交换。
+
+
+
+**示例:**
+
+```
+给定 1->2->3->4, 你应该返回 2->1->4->3.
+```
+
+#### 题解
+
+```java
+/**
+ * Definition for singly-linked list.
+ * public class ListNode {
+ *     int val;
+ *     ListNode next;
+ *     ListNode(int x) { val = x; }
+ * }
+ */
+class Solution {
+    public ListNode swapPairs(ListNode head) {
+        if(head==null) return null;
+        ListNode cur = head,pre = null,temp;
+        while(cur!=null && cur.next!=null){
+            //保存下次要遍历的节点
+            temp = cur.next.next; 
+            // 第一次遍历 需要更换头结点为偶数节点
+            if(pre==null) head = cur.next;
+            // 偶数节点 接在 上一个节点后面
+            else pre.next = cur.next;
+            // 奇数节点 接在 偶数节点后面
+            cur.next.next = cur;
+            // 下一个要遍历的节点 接在 奇数节点后面
+            cur.next = temp;
+            // 保存奇数节点
+            pre = cur;
+            cur = temp;
+        }
+        return head;
+    }
+}
+```
+
+### 25.k个一组翻转链表
+
+#### 题目描述
+
+给出一个链表，每 *k* 个节点一组进行翻转，并返回翻转后的链表。
+
+*k* 是一个正整数，它的值小于或等于链表的长度。如果节点总数不是 *k* 的整数倍，那么将最后剩余节点保持原有顺序。
+
+**示例 :**
+
+给定这个链表：`1->2->3->4->5`
+
+当 *k* = 2 时，应当返回: `2->1->4->3->5`
+
+当 *k* = 3 时，应当返回: `3->2->1->4->5`
+
+**说明 :**
+
+- 你的算法只能使用常数的额外空间。
+- **你不能只是单纯的改变节点内部的值**，而是需要实际的进行节点交换。
+
+#### 题解
+
+```java
+/**
+ * Definition for singly-linked list.
+ * public class ListNode {
+ *     int val;
+ *     ListNode next;
+ *     ListNode(int x) { val = x; }
+ * }
+ */
+class Solution {
+    public ListNode reverseKGroup(ListNode head, int k) {
+        ListNode node = new ListNode(0);
+        ListNode cur = node,pre = head;
+        int count = 0; // 计算节点数量
+        while(head!=null){
+            if(count>0 && count%k==0) {
+                cur.next = reverse(pre,k);// 反转k位
+                pre.next = head; // 反转前的头节点 即 反转后的尾节点 指向 当前节点
+                cur = pre;   // 遍历下一个
+                pre = head;  // 保存下一次反转的头结点
+            }
+            count++;
+            head = head.next;
+        }
+        // 如果链表长度小于 要旋转的长度
+        if(count<k) return pre;
+        // 如果有剩余未旋转的部分 旋转拼接
+        if(count%k==0) cur.next = reverse(pre,k);
+        return node.next;
+    }
+    // 单个链表反转
+    public ListNode reverse(ListNode head,int k){
+        if(head==null) return null;
+        ListNode pre = null,temp = null;
+        int count = 0;
+        while(head!=null && count<k){
+            temp = head.next; // 保存下一个要遍历的节点
+            head.next = pre;  // 当前节点指向上一个节点
+            pre = head;       // 保存当前节点
+            head = temp;      // 遍历一个节点
+            count++;
+        }
+        return pre;
     }
 }
 ```
