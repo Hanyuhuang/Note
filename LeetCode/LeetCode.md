@@ -2,33 +2,33 @@
 
 ### 题目列表
 
-| 题解连接                                                 | 原题连接                                                     |
-| -------------------------------------------------------- | ------------------------------------------------------------ |
-| [1.两数之和](#1两数之和)                                 | [1.两数之和](<https://leetcode-cn.com/problems/two-sum/>)    |
-| [2.两数相加](#2两数相加)                                 | [2.两数相加](<https://leetcode-cn.com/problems/add-two-numbers/>) |
-| [3.无重复字符的最长子串](#3无重复字符的最长子串)         | [3.无重复字符的最长子串](<https://leetcode-cn.com/problems/longest-substring-without-repeating-characters/>) |
-| [4.寻找两个有序数组的中位数](#4寻找两个有序数组的中位数) | [4.寻找两个有序数组的中位数](<https://leetcode-cn.com/problems/median-of-two-sorted-arrays/>) |
-| [5.最长回文子串](#5最长回文子串)                         | [5.最长回文子串](<https://leetcode-cn.com/problems/longest-palindromic-substring/>) |
-| [6.Z字形变换](#6z字形变换)                               | [6.Z字形变换](<https://leetcode-cn.com/problems/zigzag-conversion/>) |
-| [7.整数反转](#7整数反转)                                 | [7.整数反转](<https://leetcode-cn.com/problems/reverse-integer/>) |
-| [8.字符串转换整数(atoi)](#8字符串转换整数atoi)           | [8.字符串转换整数(atoi)](<https://leetcode-cn.com/problems/string-to-integer-atoi/>) |
-| [9.回文数](#9回文数)                                     | [9.回文数](<https://leetcode-cn.com/problems/palindrome-number/>) |
-| [10.正则表达式匹配](#10正则表达式匹配)                   | [10.正则表达式匹配](<https://leetcode-cn.com/problems/regular-expression-matching/>) |
-| [11.盛最多水的容器](#11盛最多水的容器)                   | [11.盛最多水的容器](<https://leetcode-cn.com/problems/container-with-most-water/>) |
-| [12.整数转罗马数字](#12整数转罗马数字)                   | [12.整数转罗马数字](https://leetcode-cn.com/problems/integer-to-roman/) |
-| [13.罗马数字转整数](#13罗马数字转整数)                   | [13.罗马数字转整数](https://leetcode-cn.com/problems/roman-to-integer/) |
-| [14.最长公共前缀](#14最长公共前缀)                       | [14.最长公共前缀](https://leetcode-cn.com/problems/longest-common-prefix/) |
-| [15.三数之和](#15三数之和)                               | [15.三数之和](https://leetcode-cn.com/problems/3sum/)        |
-| [16.最接近的三数之和](#16最接近的三数之和)               | [16.最接近的三数之和](https://leetcode-cn.com/problems/3sum-closest/) |
-| [17.电话号码的字母组合](#17电话号码的字母组合)           | [17.电话号码的字母组合](https://leetcode-cn.com/problems/letter-combinations-of-a-phone-number/) |
-| [18.四数之和](#18四数之和)                               | [18.四数之和](https://leetcode-cn.com/problems/4sum/)        |
-| [19.删除链表的倒数第N个节点](#19删除链表的倒数第n个节点) | [19.删除链表的倒数第N个节点](https://leetcode-cn.com/problems/remove-nth-node-from-end-of-list/) |
-| [20.有效的括号](#20有效的括号)                           | [20.有效的括号](https://leetcode-cn.com/problems/valid-parentheses/) |
-| [21.合并两个有序链表](#21合并两个有序链表)               | [21.合并两个有序链表](https://leetcode-cn.com/problems/merge-two-sorted-lists/) |
-| [22.括号生成](#22括号生成)                               | [22.括号生成](https://leetcode-cn.com/problems/generate-parentheses/) |
-| [23.合并K个排序链表](#23合并k个排序链表)                 | [23.合并K个排序链表](https://leetcode-cn.com/problems/merge-k-sorted-lists/) |
-| [24.两两交换链表中的节点](#24两两交换链表中的节点)       | [24.两两交换链表中的节点](https://leetcode-cn.com/problems/swap-nodes-in-pairs/) |
-| [25.k个一组翻转链表](#25k个一组翻转链表)                 | [25.k个一组翻转链表](https://leetcode-cn.com/problems/reverse-nodes-in-k-group/) |
+| 题解链接                                                 | 原题链接                                                     | 题解链接                                               | 原题链接                                                     |
+| -------------------------------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------ | ------------------------------------------------------------ |
+| [1.两数之和](#1两数之和)                                 | [1.两数之和](<https://leetcode-cn.com/problems/two-sum/>)    | [26.删除排序数组中的重复项](#26删除排序数组中的重复项) | [26.删除排序数组中的重复项](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/) |
+| [2.两数相加](#2两数相加)                                 | [2.两数相加](<https://leetcode-cn.com/problems/add-two-numbers/>) | [27.移除元素](#27移除元素)                             | [27.移除元素](https://leetcode-cn.com/problems/remove-element/) |
+| [3.无重复字符的最长子串](#3无重复字符的最长子串)         | [3.无重复字符的最长子串](<https://leetcode-cn.com/problems/longest-substring-without-repeating-characters/>) | [28.实现strStr()](#28实现strStr())                     | [28.实现strStr()](https://leetcode-cn.com/problems/implement-strstr/) |
+| [4.寻找两个有序数组的中位数](#4寻找两个有序数组的中位数) | [4.寻找两个有序数组的中位数](<https://leetcode-cn.com/problems/median-of-two-sorted-arrays/>) | [29.两数相除](#29两数相除)                             | [29.两数相除](https://leetcode-cn.com/problems/divide-two-integers/) |
+| [5.最长回文子串](#5最长回文子串)                         | [5.最长回文子串](<https://leetcode-cn.com/problems/longest-palindromic-substring/>) |                                                        |                                                              |
+| [6.Z字形变换](#6z字形变换)                               | [6.Z字形变换](<https://leetcode-cn.com/problems/zigzag-conversion/>) |                                                        |                                                              |
+| [7.整数反转](#7整数反转)                                 | [7.整数反转](<https://leetcode-cn.com/problems/reverse-integer/>) |                                                        |                                                              |
+| [8.字符串转换整数(atoi)](#8字符串转换整数atoi)           | [8.字符串转换整数(atoi)](<https://leetcode-cn.com/problems/string-to-integer-atoi/>) |                                                        |                                                              |
+| [9.回文数](#9回文数)                                     | [9.回文数](<https://leetcode-cn.com/problems/palindrome-number/>) |                                                        |                                                              |
+| [10.正则表达式匹配](#10正则表达式匹配)                   | [10.正则表达式匹配](<https://leetcode-cn.com/problems/regular-expression-matching/>) |                                                        |                                                              |
+| [11.盛最多水的容器](#11盛最多水的容器)                   | [11.盛最多水的容器](<https://leetcode-cn.com/problems/container-with-most-water/>) |                                                        |                                                              |
+| [12.整数转罗马数字](#12整数转罗马数字)                   | [12.整数转罗马数字](https://leetcode-cn.com/problems/integer-to-roman/) |                                                        |                                                              |
+| [13.罗马数字转整数](#13罗马数字转整数)                   | [13.罗马数字转整数](https://leetcode-cn.com/problems/roman-to-integer/) |                                                        |                                                              |
+| [14.最长公共前缀](#14最长公共前缀)                       | [14.最长公共前缀](https://leetcode-cn.com/problems/longest-common-prefix/) |                                                        |                                                              |
+| [15.三数之和](#15三数之和)                               | [15.三数之和](https://leetcode-cn.com/problems/3sum/)        |                                                        |                                                              |
+| [16.最接近的三数之和](#16最接近的三数之和)               | [16.最接近的三数之和](https://leetcode-cn.com/problems/3sum-closest/) |                                                        |                                                              |
+| [17.电话号码的字母组合](#17电话号码的字母组合)           | [17.电话号码的字母组合](https://leetcode-cn.com/problems/letter-combinations-of-a-phone-number/) |                                                        |                                                              |
+| [18.四数之和](#18四数之和)                               | [18.四数之和](https://leetcode-cn.com/problems/4sum/)        |                                                        |                                                              |
+| [19.删除链表的倒数第N个节点](#19删除链表的倒数第n个节点) | [19.删除链表的倒数第N个节点](https://leetcode-cn.com/problems/remove-nth-node-from-end-of-list/) |                                                        |                                                              |
+| [20.有效的括号](#20有效的括号)                           | [20.有效的括号](https://leetcode-cn.com/problems/valid-parentheses/) |                                                        |                                                              |
+| [21.合并两个有序链表](#21合并两个有序链表)               | [21.合并两个有序链表](https://leetcode-cn.com/problems/merge-two-sorted-lists/) |                                                        |                                                              |
+| [22.括号生成](#22括号生成)                               | [22.括号生成](https://leetcode-cn.com/problems/generate-parentheses/) |                                                        |                                                              |
+| [23.合并K个排序链表](#23合并k个排序链表)                 | [23.合并K个排序链表](https://leetcode-cn.com/problems/merge-k-sorted-lists/) |                                                        |                                                              |
+| [24.两两交换链表中的节点](#24两两交换链表中的节点)       | [24.两两交换链表中的节点](https://leetcode-cn.com/problems/swap-nodes-in-pairs/) |                                                        |                                                              |
+| [25.k个一组翻转链表](#25k个一组翻转链表)                 | [25.k个一组翻转链表](https://leetcode-cn.com/problems/reverse-nodes-in-k-group/) |                                                        |                                                              |
 ### 1.两数之和
 
 #### 题目描述
@@ -1512,6 +1512,235 @@ class Solution {
             count++;
         }
         return pre;
+    }
+}
+```
+
+### 26.删除排序数组中的重复项
+
+#### 题目描述
+
+给定一个排序数组，你需要在**原地**删除重复出现的元素，使得每个元素只出现一次，返回移除后数组的新长度。
+
+不要使用额外的数组空间，你必须在**原地修改输入数组**并在使用 O(1) 额外空间的条件下完成。
+
+**示例 1:**
+
+```
+给定数组 nums = [1,1,2], 
+
+函数应该返回新的长度 2, 并且原数组 nums 的前两个元素被修改为 1, 2。 
+
+你不需要考虑数组中超出新长度后面的元素。
+```
+
+**示例 2:**
+
+```
+给定 nums = [0,0,1,1,1,2,2,3,3,4],
+
+函数应该返回新的长度 5, 并且原数组 nums 的前五个元素被修改为 0, 1, 2, 3, 4。
+
+你不需要考虑数组中超出新长度后面的元素。
+```
+
+**说明:**
+
+为什么返回数值是整数，但输出的答案是数组呢?
+
+请注意，输入数组是以**“引用”**方式传递的，这意味着在函数里修改输入数组对于调用者是可见的。
+
+你可以想象内部操作如下:
+
+```
+// nums 是以“引用”方式传递的。也就是说，不对实参做任何拷贝
+int len = removeDuplicates(nums);
+
+// 在函数里修改输入数组对于调用者是可见的。
+// 根据你的函数返回的长度, 它会打印出数组中该长度范围内的所有元素。
+for (int i = 0; i < len; i++) {
+    print(nums[i]);
+}
+```
+
+#### 题解
+
+```java
+class Solution {
+    public int removeDuplicates(int[] nums) {
+        int i= 0;  //慢指针
+        for(int j=1;j<nums.length;j++){
+            // 快慢指针不相同 i+1位置的值换成j位置的值
+            if(nums[i]!=nums[j]) nums[++i] = nums[j];
+        }
+        return i+1;
+    }
+}
+```
+
+### 27.移除元素
+
+#### 题目描述
+
+给定一个数组 *nums* 和一个值 *val*，你需要**原地**移除所有数值等于 *val* 的元素，返回移除后数组的新长度。
+
+不要使用额外的数组空间，你必须在**原地修改输入数组**并在使用 O(1) 额外空间的条件下完成。
+
+元素的顺序可以改变。你不需要考虑数组中超出新长度后面的元素。
+
+**示例 1:**
+
+```
+给定 nums = [3,2,2,3], val = 3,
+
+函数应该返回新的长度 2, 并且 nums 中的前两个元素均为 2。
+
+你不需要考虑数组中超出新长度后面的元素。
+```
+
+**示例 2:**
+
+```
+给定 nums = [0,1,2,2,3,0,4,2], val = 2,
+
+函数应该返回新的长度 5, 并且 nums 中的前五个元素为 0, 1, 3, 0, 4。
+
+注意这五个元素可为任意顺序。
+
+你不需要考虑数组中超出新长度后面的元素。
+```
+
+**说明:**
+
+为什么返回数值是整数，但输出的答案是数组呢?
+
+请注意，输入数组是以**“引用”**方式传递的，这意味着在函数里修改输入数组对于调用者是可见的。
+
+你可以想象内部操作如下:
+
+```
+// nums 是以“引用”方式传递的。也就是说，不对实参作任何拷贝
+int len = removeElement(nums, val);
+
+// 在函数里修改输入数组对于调用者是可见的。
+// 根据你的函数返回的长度, 它会打印出数组中该长度范围内的所有元素。
+for (int i = 0; i < len; i++) {
+    print(nums[i]);
+}
+```
+
+#### 题解
+
+```java
+class Solution {
+    public int removeElement(int[] nums, int val) {
+        int i = -1;
+        for(int j=0;j<nums.length;j++){
+            // 没遇到val 就把i+1位置的值改为j位置的值
+            // 遇到val i不动
+            if(nums[j]!=val) nums[++i] = nums[j];
+        }
+        return i+1;
+    }
+}
+```
+
+### 28.实现strStr()
+
+#### 题目描述
+
+实现 [strStr()](https://baike.baidu.com/item/strstr/811469) 函数。
+
+给定一个 haystack 字符串和一个 needle 字符串，在 haystack 字符串中找出 needle 字符串出现的第一个位置 (从0开始)。如果不存在，则返回  **-1**。
+
+**示例 1:**
+
+```
+输入: haystack = "hello", needle = "ll"
+输出: 2
+```
+
+**示例 2:**
+
+```
+输入: haystack = "aaaaa", needle = "bba"
+输出: -1
+```
+
+**说明:**
+
+当 `needle` 是空字符串时，我们应当返回什么值呢？这是一个在面试中很好的问题。
+
+对于本题而言，当 `needle` 是空字符串时我们应当返回 0 。这与C语言的 [strstr()](https://baike.baidu.com/item/strstr/811469) 以及 Java的 [indexOf()](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html#indexOf(java.lang.String)) 定义相符。
+
+#### 题解
+
+```java
+class Solution {
+    public int strStr(String haystack, String needle) {
+        int j=0,index=0;
+        for(int i=0;i<haystack.length();i++){
+            // 匹配结束
+            if(j==needle.length()) return index;
+            // 单个字符匹配
+            if(haystack.charAt(i)==needle.charAt(j)) j++;
+            else{
+                i -= j;
+                index = i+1;
+                j = 0;
+            }
+        }
+        return j==needle.length() ? index : -1;
+    }
+}
+```
+
+### 29.两数相除
+
+#### 题目描述
+
+给定两个整数，被除数 `dividend` 和除数 `divisor`。将两数相除，要求不使用乘法、除法和 mod 运算符。
+
+返回被除数 `dividend` 除以除数 `divisor` 得到的商。
+
+**示例 1:**
+
+```
+输入: dividend = 10, divisor = 3
+输出: 3
+```
+
+**示例 2:**
+
+```
+输入: dividend = 7, divisor = -3
+输出: -2
+```
+
+**说明:**
+
+- 被除数和除数均为 32 位有符号整数。
+- 除数不为 0。
+- 假设我们的环境只能存储 32 位有符号整数，其数值范围是 [−2^31, 2^31− 1]。本题中，如果除法结果溢出，则返回 2^31 − 1。
+
+#### 题解
+
+```java
+class Solution {
+    public int divide(int dividend, int divisor) {
+        if(dividend==Integer.MIN_VALUE && divisor==-1) return Integer.MAX_VALUE;
+        int res = 0;
+        boolean flag = (dividend ^ divisor)>=0;
+        long i = Math.abs((long)dividend);
+        long j = Math.abs((long)divisor);
+        // 计算结果
+        for (int k=31; k>=0;k--) {
+            if ((i>>k)>=j) {  //找出足够大的数2^n*divisor
+                res += 1<<k;  //将结果加上2^n
+                i -= j<<k;    //将被除数减去2^n*divisor
+            }
+        }
+        return flag? res : -res;
     }
 }
 ```
