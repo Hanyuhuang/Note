@@ -8,7 +8,7 @@
 | [2.两数相加](#2两数相加)                                 | [2.两数相加](<https://leetcode-cn.com/problems/add-two-numbers/>) | [27.移除元素](#27移除元素)                             | [27.移除元素](https://leetcode-cn.com/problems/remove-element/) |
 | [3.无重复字符的最长子串](#3无重复字符的最长子串)         | [3.无重复字符的最长子串](<https://leetcode-cn.com/problems/longest-substring-without-repeating-characters/>) | [28.实现strStr()](#28实现strStr())                     | [28.实现strStr()](https://leetcode-cn.com/problems/implement-strstr/) |
 | [4.寻找两个有序数组的中位数](#4寻找两个有序数组的中位数) | [4.寻找两个有序数组的中位数](<https://leetcode-cn.com/problems/median-of-two-sorted-arrays/>) | [29.两数相除](#29两数相除)                             | [29.两数相除](https://leetcode-cn.com/problems/divide-two-integers/) |
-| [5.最长回文子串](#5最长回文子串)                         | [5.最长回文子串](<https://leetcode-cn.com/problems/longest-palindromic-substring/>) |                                                        |                                                              |
+| [5.最长回文子串](#5最长回文子串)                         | [5.最长回文子串](<https://leetcode-cn.com/problems/longest-palindromic-substring/>) | [30.串联所有单词的子串](#30串联所有单词的子串)         | [30.串联所有单词的子串](https://leetcode-cn.com/problems/substring-with-concatenation-of-all-words/) |
 | [6.Z字形变换](#6z字形变换)                               | [6.Z字形变换](<https://leetcode-cn.com/problems/zigzag-conversion/>) |                                                        |                                                              |
 | [7.整数反转](#7整数反转)                                 | [7.整数反转](<https://leetcode-cn.com/problems/reverse-integer/>) |                                                        |                                                              |
 | [8.字符串转换整数(atoi)](#8字符串转换整数atoi)           | [8.字符串转换整数(atoi)](<https://leetcode-cn.com/problems/string-to-integer-atoi/>) |                                                        |                                                              |
@@ -24,8 +24,8 @@
 | [18.四数之和](#18四数之和)                               | [18.四数之和](https://leetcode-cn.com/problems/4sum/)        |                                                        |                                                              |
 | [19.删除链表的倒数第N个节点](#19删除链表的倒数第n个节点) | [19.删除链表的倒数第N个节点](https://leetcode-cn.com/problems/remove-nth-node-from-end-of-list/) |                                                        |                                                              |
 | [20.有效的括号](#20有效的括号)                           | [20.有效的括号](https://leetcode-cn.com/problems/valid-parentheses/) |                                                        |                                                              |
-| [21.合并两个有序链表](#21合并两个有序链表)               | [21.合并两个有序链表](https://leetcode-cn.com/problems/merge-two-sorted-lists/) |                                                        |                                                              |
-| [22.括号生成](#22括号生成)                               | [22.括号生成](https://leetcode-cn.com/problems/generate-parentheses/) |                                                        |                                                              |
+| [21.合并两个有序链表](#21合并两个有序链表)               | [21.合并两个有序链表](https://leetcode-cn.com/problems/merge-two-sorted-lists/) | [46.全排列](#46全排列)                                 | [46.全排列](https://leetcode-cn.com/problems/permutations/)  |
+| [22.括号生成](#22括号生成)                               | [22.括号生成](https://leetcode-cn.com/problems/generate-parentheses/) | [47.全排列 II](#47.全排列 II)                          | [47.全排列 II](https://leetcode-cn.com/problems/permutations-ii/) |
 | [23.合并K个排序链表](#23合并k个排序链表)                 | [23.合并K个排序链表](https://leetcode-cn.com/problems/merge-k-sorted-lists/) |                                                        |                                                              |
 | [24.两两交换链表中的节点](#24两两交换链表中的节点)       | [24.两两交换链表中的节点](https://leetcode-cn.com/problems/swap-nodes-in-pairs/) |                                                        |                                                              |
 | [25.k个一组翻转链表](#25k个一组翻转链表)                 | [25.k个一组翻转链表](https://leetcode-cn.com/problems/reverse-nodes-in-k-group/) |                                                        |                                                              |
@@ -1741,6 +1741,171 @@ class Solution {
             }
         }
         return flag? res : -res;
+    }
+}
+```
+
+### 30.串联所有单词的子串
+
+#### 题目描述
+
+给定一个字符串 **s** 和一些长度相同的单词 **words。**找出 **s** 中恰好可以由 **words** 中所有单词串联形成的子串的起始位置。
+
+注意子串要与 **words** 中的单词完全匹配，中间不能有其他字符，但不需要考虑 **words** 中单词串联的顺序。 
+
+**示例 1：**
+
+```
+输入：
+  s = "barfoothefoobarman",
+  words = ["foo","bar"]
+输出：[0,9]
+解释：
+从索引 0 和 9 开始的子串分别是 "barfoor" 和 "foobar" 。
+输出的顺序不重要, [9,0] 也是有效答案。
+```
+
+**示例 2：**
+
+```
+输入：
+  s = "wordgoodgoodgoodbestword",
+  words = ["word","good","best","word"]
+输出：[]
+```
+
+#### 题解
+
+```java
+class Solution {
+    public List<Integer> findSubstring(String s, String[] words) {
+        List<Integer> list = new ArrayList();
+        if(s.length()<1 || words.length<1) return list;
+        int len = words[0].length();
+        HashMap<String,Integer> map = new HashMap();
+        // 将所有字符串放入map中并统计出现次数
+        for(String str : words){
+            map.put(str,map.getOrDefault(str,0)+1);
+        }
+        // 遍历整个字符串s 优化 减少遍历次数 len*words.length 
+        for(int i=0;i<s.length()-len*words.length+1;i++){
+            HashMap<String,Integer> temp = new HashMap();
+            // 遍历words中每一个字符串
+            for(int j=0;j<words.length;j++){
+                String str = s.substring(i+len*j,i+len*(j+1));
+                // 匹配成功
+                if(map.containsKey(str)){
+                    temp.put(str,temp.getOrDefault(str,0)+1);
+                    // 匹配次数超出words中此字符串出现的次数
+                    if(temp.get(str)>map.get(str)) break;
+                }else break;
+                // 全部匹配成功
+                if(j==words.length-1) list.add(i);
+            }
+        }
+        return list;
+    }
+}
+```
+
+### 46.全排列
+
+#### 题目描述
+
+给定一个**没有重复**数字的序列，返回其所有可能的全排列。
+
+**示例:**
+
+```
+输入: [1,2,3]
+输出:
+[
+  [1,2,3],
+  [1,3,2],
+  [2,1,3],
+  [2,3,1],
+  [3,1,2],
+  [3,2,1]
+]
+```
+
+#### 题解
+
+```java
+class Solution {
+    public List<List<Integer>> permute(int[] nums) {
+        List<List<Integer>> res = new ArrayList();
+        List<Integer> list = new ArrayList();
+        dfs(res,list,nums,new boolean[nums.length]);
+        return res;
+    }
+    
+    public void dfs (List<List<Integer>> res,List<Integer> list,int[] nums,boolean[] flag){
+        if(list.size()==nums.length){
+            res.add(new ArrayList(list));
+            return;
+        }
+        for(int i=0;i<nums.length;i++){
+            if(flag[i]) continue;
+            // 修改属性
+            flag[i] = true;
+            list.add(nums[i]);
+            dfs(res,list,nums,flag);
+            // 回溯
+            flag[i] = false;
+            list.remove(list.size()-1);
+        }
+    }
+}
+```
+
+### 47.全排列 II
+
+#### 题目描述
+
+给定一个可包含重复数字的序列，返回所有不重复的全排列。
+
+**示例:**
+
+```
+输入: [1,1,2]
+输出:
+[
+  [1,1,2],
+  [1,2,1],
+  [2,1,1]
+]
+```
+
+#### 题解
+
+```java
+class Solution {
+    public List<List<Integer>> permuteUnique(int[] nums) {
+        List<List<Integer>> res = new ArrayList();
+        if(nums==null || nums.length==0) return res;
+        List<Integer> list = new ArrayList();
+        Arrays.sort(nums);
+        dfs(res,list,nums,new boolean[nums.length]);
+        return res;
+    }
+    public void dfs(List<List<Integer>> res,List<Integer> list,int[] nums,boolean[] flag){
+        // 匹配结束
+         if(list.size() == nums.length){
+             res.add(new ArrayList(list));
+             return;
+         }
+        for(int i=0;i<nums.length;i++){
+            // 去除遍历过的数字
+            if(flag[i] || (i>0 && nums[i]==nums[i-1] && !flag[i-1])) continue;
+            flag[i] = true;
+            list.add(nums[i]);
+            // 遍历下一个数
+            dfs(res,list,nums,flag);
+            // 回溯
+            flag[i] = false;
+            list.remove(list.size()-1);
+        }
     }
 }
 ```
