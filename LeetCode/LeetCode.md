@@ -2,33 +2,33 @@
 
 ### 题目列表
 
-| 题解链接                                                 | 原题链接                                                     | 题解链接                                               | 原题链接                                                     |
-| -------------------------------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------ | ------------------------------------------------------------ |
-| [1.两数之和](#1两数之和)                                 | [1.两数之和](<https://leetcode-cn.com/problems/two-sum/>)    | [26.删除排序数组中的重复项](#26删除排序数组中的重复项) | [26.删除排序数组中的重复项](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/) |
-| [2.两数相加](#2两数相加)                                 | [2.两数相加](<https://leetcode-cn.com/problems/add-two-numbers/>) | [27.移除元素](#27移除元素)                             | [27.移除元素](https://leetcode-cn.com/problems/remove-element/) |
-| [3.无重复字符的最长子串](#3无重复字符的最长子串)         | [3.无重复字符的最长子串](<https://leetcode-cn.com/problems/longest-substring-without-repeating-characters/>) | [28.实现strStr()](#28实现strStr())                     | [28.实现strStr()](https://leetcode-cn.com/problems/implement-strstr/) |
-| [4.寻找两个有序数组的中位数](#4寻找两个有序数组的中位数) | [4.寻找两个有序数组的中位数](<https://leetcode-cn.com/problems/median-of-two-sorted-arrays/>) | [29.两数相除](#29两数相除)                             | [29.两数相除](https://leetcode-cn.com/problems/divide-two-integers/) |
-| [5.最长回文子串](#5最长回文子串)                         | [5.最长回文子串](<https://leetcode-cn.com/problems/longest-palindromic-substring/>) | [30.串联所有单词的子串](#30串联所有单词的子串)         | [30.串联所有单词的子串](https://leetcode-cn.com/problems/substring-with-concatenation-of-all-words/) |
-| [6.Z字形变换](#6z字形变换)                               | [6.Z字形变换](<https://leetcode-cn.com/problems/zigzag-conversion/>) |                                                        |                                                              |
-| [7.整数反转](#7整数反转)                                 | [7.整数反转](<https://leetcode-cn.com/problems/reverse-integer/>) |                                                        |                                                              |
-| [8.字符串转换整数(atoi)](#8字符串转换整数atoi)           | [8.字符串转换整数(atoi)](<https://leetcode-cn.com/problems/string-to-integer-atoi/>) |                                                        |                                                              |
-| [9.回文数](#9回文数)                                     | [9.回文数](<https://leetcode-cn.com/problems/palindrome-number/>) |                                                        |                                                              |
-| [10.正则表达式匹配](#10正则表达式匹配)                   | [10.正则表达式匹配](<https://leetcode-cn.com/problems/regular-expression-matching/>) |                                                        |                                                              |
-| [11.盛最多水的容器](#11盛最多水的容器)                   | [11.盛最多水的容器](<https://leetcode-cn.com/problems/container-with-most-water/>) |                                                        |                                                              |
-| [12.整数转罗马数字](#12整数转罗马数字)                   | [12.整数转罗马数字](https://leetcode-cn.com/problems/integer-to-roman/) |                                                        |                                                              |
-| [13.罗马数字转整数](#13罗马数字转整数)                   | [13.罗马数字转整数](https://leetcode-cn.com/problems/roman-to-integer/) |                                                        |                                                              |
-| [14.最长公共前缀](#14最长公共前缀)                       | [14.最长公共前缀](https://leetcode-cn.com/problems/longest-common-prefix/) |                                                        |                                                              |
-| [15.三数之和](#15三数之和)                               | [15.三数之和](https://leetcode-cn.com/problems/3sum/)        |                                                        |                                                              |
-| [16.最接近的三数之和](#16最接近的三数之和)               | [16.最接近的三数之和](https://leetcode-cn.com/problems/3sum-closest/) |                                                        |                                                              |
-| [17.电话号码的字母组合](#17电话号码的字母组合)           | [17.电话号码的字母组合](https://leetcode-cn.com/problems/letter-combinations-of-a-phone-number/) |                                                        |                                                              |
-| [18.四数之和](#18四数之和)                               | [18.四数之和](https://leetcode-cn.com/problems/4sum/)        |                                                        |                                                              |
-| [19.删除链表的倒数第N个节点](#19删除链表的倒数第n个节点) | [19.删除链表的倒数第N个节点](https://leetcode-cn.com/problems/remove-nth-node-from-end-of-list/) |                                                        |                                                              |
-| [20.有效的括号](#20有效的括号)                           | [20.有效的括号](https://leetcode-cn.com/problems/valid-parentheses/) |                                                        |                                                              |
-| [21.合并两个有序链表](#21合并两个有序链表)               | [21.合并两个有序链表](https://leetcode-cn.com/problems/merge-two-sorted-lists/) | [46.全排列](#46全排列)                                 | [46.全排列](https://leetcode-cn.com/problems/permutations/)  |
-| [22.括号生成](#22括号生成)                               | [22.括号生成](https://leetcode-cn.com/problems/generate-parentheses/) | [47.全排列 II](#47.全排列 II)                          | [47.全排列 II](https://leetcode-cn.com/problems/permutations-ii/) |
-| [23.合并K个排序链表](#23合并k个排序链表)                 | [23.合并K个排序链表](https://leetcode-cn.com/problems/merge-k-sorted-lists/) |                                                        |                                                              |
-| [24.两两交换链表中的节点](#24两两交换链表中的节点)       | [24.两两交换链表中的节点](https://leetcode-cn.com/problems/swap-nodes-in-pairs/) |                                                        |                                                              |
-| [25.k个一组翻转链表](#25k个一组翻转链表)                 | [25.k个一组翻转链表](https://leetcode-cn.com/problems/reverse-nodes-in-k-group/) |                                                        |                                                              |
+| 题解链接                                                 | 原题链接                                                     | 题解链接                                                     | 原题链接                                                     |
+| -------------------------------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| [1.两数之和](#1两数之和)                                 | [1.两数之和](<https://leetcode-cn.com/problems/two-sum/>)    | [26.删除排序数组中的重复项](#26删除排序数组中的重复项)       | [26.删除排序数组中的重复项](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/) |
+| [2.两数相加](#2两数相加)                                 | [2.两数相加](<https://leetcode-cn.com/problems/add-two-numbers/>) | [27.移除元素](#27移除元素)                                   | [27.移除元素](https://leetcode-cn.com/problems/remove-element/) |
+| [3.无重复字符的最长子串](#3无重复字符的最长子串)         | [3.无重复字符的最长子串](<https://leetcode-cn.com/problems/longest-substring-without-repeating-characters/>) | [28.实现strStr()](#28实现strStr())                           | [28.实现strStr()](https://leetcode-cn.com/problems/implement-strstr/) |
+| [4.寻找两个有序数组的中位数](#4寻找两个有序数组的中位数) | [4.寻找两个有序数组的中位数](<https://leetcode-cn.com/problems/median-of-two-sorted-arrays/>) | [29.两数相除](#29两数相除)                                   | [29.两数相除](https://leetcode-cn.com/problems/divide-two-integers/) |
+| [5.最长回文子串](#5最长回文子串)                         | [5.最长回文子串](<https://leetcode-cn.com/problems/longest-palindromic-substring/>) | [30.串联所有单词的子串](#30串联所有单词的子串)               | [30.串联所有单词的子串](https://leetcode-cn.com/problems/substring-with-concatenation-of-all-words/) |
+| [6.Z字形变换](#6z字形变换)                               | [6.Z字形变换](<https://leetcode-cn.com/problems/zigzag-conversion/>) | [31.下一个排列](#31下一个排列)                               | [31.下一个排列](https://leetcode-cn.com/problems/next-permutation/) |
+| [7.整数反转](#7整数反转)                                 | [7.整数反转](<https://leetcode-cn.com/problems/reverse-integer/>) | [32.最长有效括号](#32最长有效括号)                           | [32.最长有效括号](https://leetcode-cn.com/problems/longest-valid-parentheses/) |
+| [8.字符串转换整数(atoi)](#8字符串转换整数atoi)           | [8.字符串转换整数(atoi)](<https://leetcode-cn.com/problems/string-to-integer-atoi/>) | [33.搜索旋转排序数组](#33搜索旋转排序数组)                   | [33.搜索旋转排序数组](https://leetcode-cn.com/problems/search-in-rotated-sorted-array/) |
+| [9.回文数](#9回文数)                                     | [9.回文数](<https://leetcode-cn.com/problems/palindrome-number/>) | [34.在排序数组中查找元素的第一个和最后一个位置](#34在排序数组中查找元素的第一个和最后一个位置) | [34.在排序数组中查找元素的第一个和最后一个位置](https://leetcode-cn.com/problems/find-first-and-last-position-of-element-in-sorted-array/) |
+| [10.正则表达式匹配](#10正则表达式匹配)                   | [10.正则表达式匹配](<https://leetcode-cn.com/problems/regular-expression-matching/>) | [35.搜索插入位置](#35搜索插入位置)                           | [35.搜索插入位置](https://leetcode-cn.com/problems/search-insert-position/) |
+| [11.盛最多水的容器](#11盛最多水的容器)                   | [11.盛最多水的容器](<https://leetcode-cn.com/problems/container-with-most-water/>) |                                                              |                                                              |
+| [12.整数转罗马数字](#12整数转罗马数字)                   | [12.整数转罗马数字](https://leetcode-cn.com/problems/integer-to-roman/) |                                                              |                                                              |
+| [13.罗马数字转整数](#13罗马数字转整数)                   | [13.罗马数字转整数](https://leetcode-cn.com/problems/roman-to-integer/) |                                                              |                                                              |
+| [14.最长公共前缀](#14最长公共前缀)                       | [14.最长公共前缀](https://leetcode-cn.com/problems/longest-common-prefix/) |                                                              |                                                              |
+| [15.三数之和](#15三数之和)                               | [15.三数之和](https://leetcode-cn.com/problems/3sum/)        |                                                              |                                                              |
+| [16.最接近的三数之和](#16最接近的三数之和)               | [16.最接近的三数之和](https://leetcode-cn.com/problems/3sum-closest/) |                                                              |                                                              |
+| [17.电话号码的字母组合](#17电话号码的字母组合)           | [17.电话号码的字母组合](https://leetcode-cn.com/problems/letter-combinations-of-a-phone-number/) |                                                              |                                                              |
+| [18.四数之和](#18四数之和)                               | [18.四数之和](https://leetcode-cn.com/problems/4sum/)        |                                                              |                                                              |
+| [19.删除链表的倒数第N个节点](#19删除链表的倒数第n个节点) | [19.删除链表的倒数第N个节点](https://leetcode-cn.com/problems/remove-nth-node-from-end-of-list/) |                                                              |                                                              |
+| [20.有效的括号](#20有效的括号)                           | [20.有效的括号](https://leetcode-cn.com/problems/valid-parentheses/) |                                                              |                                                              |
+| [21.合并两个有序链表](#21合并两个有序链表)               | [21.合并两个有序链表](https://leetcode-cn.com/problems/merge-two-sorted-lists/) | [46.全排列](#46全排列)                                       | [46.全排列](https://leetcode-cn.com/problems/permutations/)  |
+| [22.括号生成](#22括号生成)                               | [22.括号生成](https://leetcode-cn.com/problems/generate-parentheses/) | [47.全排列 II](#47.全排列 II)                                | [47.全排列 II](https://leetcode-cn.com/problems/permutations-ii/) |
+| [23.合并K个排序链表](#23合并k个排序链表)                 | [23.合并K个排序链表](https://leetcode-cn.com/problems/merge-k-sorted-lists/) |                                                              |                                                              |
+| [24.两两交换链表中的节点](#24两两交换链表中的节点)       | [24.两两交换链表中的节点](https://leetcode-cn.com/problems/swap-nodes-in-pairs/) |                                                              |                                                              |
+| [25.k个一组翻转链表](#25k个一组翻转链表)                 | [25.k个一组翻转链表](https://leetcode-cn.com/problems/reverse-nodes-in-k-group/) |                                                              |                                                              |
 ### 1.两数之和
 
 #### 题目描述
@@ -1807,6 +1807,253 @@ class Solution {
     }
 }
 ```
+
+### 31.下一个排列
+
+#### 题目描述
+
+实现获取下一个排列的函数，算法需要将给定数字序列重新排列成字典序中下一个更大的排列。
+
+如果不存在下一个更大的排列，则将数字重新排列成最小的排列（即升序排列）。
+
+必须**原地**修改，只允许使用额外常数空间。
+
+以下是一些例子，输入位于左侧列，其相应输出位于右侧列。
+`1,2,3` → `1,3,2`
+`3,2,1` → `1,2,3`
+`1,1,5` → `1,5,1`
+
+#### 题解
+
+```java
+class Solution {
+    public void nextPermutation(int[] nums) {
+        if(nums==null || nums.length<2) return;
+        int i = nums.length-1;
+        // 从后往前找 找到不递增的数
+        while(i>0 && nums[i]<=nums[i-1]){
+            i--;
+        }
+        // 整个排序 不为降序
+        if(i>0){
+        // 在[i,nums.length-1]中找到下一个比nums[i-1]大的数
+           int j = nums.length-1;
+            while(j>i-1 && nums[j]<=nums[i-1]){
+                j--;
+            }
+            swap(nums,i-1,j);
+        }
+        // 剩余数[i,nums.length-1]排序
+        Arrays.sort(nums,i,nums.length);
+    }
+    public void swap(int[] a,int i,int j){
+        int temp = a[i];
+        a[i] = a[j];
+        a[j] = temp;
+    }
+}
+```
+
+### 32.最长有效括号
+
+#### 题目描述
+
+给定一个只包含 `'('` 和 `')'` 的字符串，找出最长的包含有效括号的子串的长度。
+
+**示例 1:**
+
+```
+输入: "(()"
+输出: 2
+解释: 最长有效括号子串为 "()"
+```
+
+**示例 2:**
+
+```
+输入: ")()())"
+输出: 4
+解释: 最长有效括号子串为 "()()"
+```
+
+#### 题解
+
+```java
+class Solution {
+    public int longestValidParentheses(String s) {
+        Stack<Integer> stack = new Stack();
+        stack.push(-1);
+        int res = 0;
+        for(int i=0;i<s.length();i++){
+           if(s.charAt(i)=='('){
+               stack.push(i);
+           } else{
+             // 遇到)就出栈统计  
+               stack.pop();
+               if(stack.isEmpty()){
+                   stack.push(i);
+               } else{
+                   res = Math.max(res,i-stack.peek());
+               }
+           }
+        }
+        return res;
+    }
+}
+```
+
+### 33.搜索旋转排序数组
+
+#### 题目描述
+
+假设按照升序排序的数组在预先未知的某个点上进行了旋转。
+
+( 例如，数组 `[0,1,2,4,5,6,7]` 可能变为 `[4,5,6,7,0,1,2]` )。
+
+搜索一个给定的目标值，如果数组中存在这个目标值，则返回它的索引，否则返回 `-1` 。
+
+你可以假设数组中不存在重复的元素。
+
+你的算法时间复杂度必须是 *O*(log *n*) 级别。
+
+**示例 1:**
+
+```
+输入: nums = [4,5,6,7,0,1,2], target = 0
+输出: 4
+```
+
+**示例 2:**
+
+```
+输入: nums = [4,5,6,7,0,1,2], target = 3
+输出: -1
+```
+
+#### 题解
+
+```java
+class Solution {
+    public int search(int[] nums, int target) {
+        int i = 0,j = nums.length-1;
+        while(i<=j){
+            int mid = (i+j)/2;
+            // 找到数字
+            if(nums[mid]==target) return mid;
+            // 左半段递增有序
+            else if(nums[i]<=nums[mid]){ 
+                // target 在[i,mid) 间
+                if(nums[i]<=target && target<nums[mid]) j=mid-1;
+                else i=mid+1;
+            // 右半段递增有序
+            } else{
+                // target 在(mid,j] 间
+                if(nums[mid]<target && target<=nums[j]) i=mid+1;
+                else j=mid-1;
+            }
+        }
+        return -1;
+    }
+}
+```
+
+### 34.在排序数组中查找元素的第一个和最后一个位置
+
+#### 题目描述
+
+给定一个按照升序排列的整数数组 `nums`，和一个目标值 `target`。找出给定目标值在数组中的开始位置和结束位置。
+
+你的算法时间复杂度必须是 *O*(log *n*) 级别。
+
+如果数组中不存在目标值，返回 `[-1, -1]`。
+
+**示例 1:**
+
+```
+输入: nums = [5,7,7,8,8,10], target = 8
+输出: [3,4]
+```
+
+**示例 2:**
+
+```
+输入: nums = [5,7,7,8,8,10], target = 6
+输出: [-1,-1]
+```
+
+#### 题解
+
+```java
+class Solution {
+    public int[] searchRange(int[] nums, int target) {
+        int[] a = new int[]{-1,-1};
+        for(int i=0;i<nums.length;i++){
+            if(nums[i]==target){
+                a[0] = i;
+                break;
+            }
+        }
+        for(int i=nums.length-1;i>=0;i--){
+            if(nums[i]==target){
+                a[1] = i;
+                break;
+            }
+        }
+        return a;
+    }
+}
+```
+
+### 35.搜索插入位置
+
+#### 题目描述
+
+给定一个排序数组和一个目标值，在数组中找到目标值，并返回其索引。如果目标值不存在于数组中，返回它将会被按顺序插入的位置。
+
+你可以假设数组中无重复元素。
+
+**示例 1:**
+
+```
+输入: [1,3,5,6], 5
+输出: 2
+```
+
+**示例 2:**
+
+```
+输入: [1,3,5,6], 2
+输出: 1
+```
+
+**示例 3:**
+
+```
+输入: [1,3,5,6], 7
+输出: 4
+```
+
+**示例 4:**
+
+```
+输入: [1,3,5,6], 0
+输出: 0
+```
+
+#### 题解
+
+```java
+class Solution {
+    public int searchInsert(int[] nums, int target) {
+        for(int i=0;i<nums.length;i++){
+            if(target<=nums[i]) return i;
+        }
+        return nums.length;
+    }
+}
+```
+
+
 
 ### 46.全排列
 
