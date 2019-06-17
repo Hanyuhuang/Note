@@ -14,21 +14,21 @@
 | [8.字符串转换整数(atoi)](#8字符串转换整数atoi)           | [8.字符串转换整数(atoi)](<https://leetcode-cn.com/problems/string-to-integer-atoi/>) | [33.搜索旋转排序数组](#33搜索旋转排序数组)                   | [33.搜索旋转排序数组](https://leetcode-cn.com/problems/search-in-rotated-sorted-array/) |
 | [9.回文数](#9回文数)                                     | [9.回文数](<https://leetcode-cn.com/problems/palindrome-number/>) | [34.在排序数组中查找元素的第一个和最后一个位置](#34在排序数组中查找元素的第一个和最后一个位置) | [34.在排序数组中查找元素的第一个和最后一个位置](https://leetcode-cn.com/problems/find-first-and-last-position-of-element-in-sorted-array/) |
 | [10.正则表达式匹配](#10正则表达式匹配)                   | [10.正则表达式匹配](<https://leetcode-cn.com/problems/regular-expression-matching/>) | [35.搜索插入位置](#35搜索插入位置)                           | [35.搜索插入位置](https://leetcode-cn.com/problems/search-insert-position/) |
-| [11.盛最多水的容器](#11盛最多水的容器)                   | [11.盛最多水的容器](<https://leetcode-cn.com/problems/container-with-most-water/>) |                                                              |                                                              |
+| [11.盛最多水的容器](#11盛最多水的容器)                   | [11.盛最多水的容器](<https://leetcode-cn.com/problems/container-with-most-water/>) | [36.有效的数独](#36有效的数独)                               | [36.有效的数独](https://leetcode-cn.com/problems/valid-sudoku/) |
 | [12.整数转罗马数字](#12整数转罗马数字)                   | [12.整数转罗马数字](https://leetcode-cn.com/problems/integer-to-roman/) |                                                              |                                                              |
-| [13.罗马数字转整数](#13罗马数字转整数)                   | [13.罗马数字转整数](https://leetcode-cn.com/problems/roman-to-integer/) |                                                              |                                                              |
-| [14.最长公共前缀](#14最长公共前缀)                       | [14.最长公共前缀](https://leetcode-cn.com/problems/longest-common-prefix/) |                                                              |                                                              |
-| [15.三数之和](#15三数之和)                               | [15.三数之和](https://leetcode-cn.com/problems/3sum/)        |                                                              |                                                              |
-| [16.最接近的三数之和](#16最接近的三数之和)               | [16.最接近的三数之和](https://leetcode-cn.com/problems/3sum-closest/) |                                                              |                                                              |
-| [17.电话号码的字母组合](#17电话号码的字母组合)           | [17.电话号码的字母组合](https://leetcode-cn.com/problems/letter-combinations-of-a-phone-number/) |                                                              |                                                              |
-| [18.四数之和](#18四数之和)                               | [18.四数之和](https://leetcode-cn.com/problems/4sum/)        |                                                              |                                                              |
-| [19.删除链表的倒数第N个节点](#19删除链表的倒数第n个节点) | [19.删除链表的倒数第N个节点](https://leetcode-cn.com/problems/remove-nth-node-from-end-of-list/) |                                                              |                                                              |
-| [20.有效的括号](#20有效的括号)                           | [20.有效的括号](https://leetcode-cn.com/problems/valid-parentheses/) |                                                              |                                                              |
+| [13.罗马数字转整数](#13罗马数字转整数)                   | [13.罗马数字转整数](https://leetcode-cn.com/problems/roman-to-integer/) | [38.报数](#38报数)                                           | [38.报数](https://leetcode-cn.com/problems/count-and-say/)   |
+| [14.最长公共前缀](#14最长公共前缀)                       | [14.最长公共前缀](https://leetcode-cn.com/problems/longest-common-prefix/) | [39.组合总和](#39组合总和)                                   | [39.组合总和](https://leetcode-cn.com/problems/combination-sum/) |
+| [15.三数之和](#15三数之和)                               | [15.三数之和](https://leetcode-cn.com/problems/3sum/)        | [40.组合总和 II](#40组合总和ii)                              | [40.组合总和 II](https://leetcode-cn.com/problems/combination-sum-ii/) |
+| [16.最接近的三数之和](#16最接近的三数之和)               | [16.最接近的三数之和](https://leetcode-cn.com/problems/3sum-closest/) | [41.缺失的第一个正数](#41缺失的第一个正数)                   | [41.缺失的第一个正数](https://leetcode-cn.com/problems/first-missing-positive/) |
+| [17.电话号码的字母组合](#17电话号码的字母组合)           | [17.电话号码的字母组合](https://leetcode-cn.com/problems/letter-combinations-of-a-phone-number/) | [42.接雨水](#42接雨水)                                       | [42.接雨水](https://leetcode-cn.com/problems/trapping-rain-water/) |
+| [18.四数之和](#18四数之和)                               | [18.四数之和](https://leetcode-cn.com/problems/4sum/)        | [43.字符串相乘](#43字符串相乘)                               | [43.字符串相乘](https://leetcode-cn.com/problems/multiply-strings/) |
+| [19.删除链表的倒数第N个节点](#19删除链表的倒数第n个节点) | [19.删除链表的倒数第N个节点](https://leetcode-cn.com/problems/remove-nth-node-from-end-of-list/) | [44.通配符匹配](#44通配符匹配)                               | [44.通配符匹配](https://leetcode-cn.com/problems/wildcard-matching/) |
+| [20.有效的括号](#20有效的括号)                           | [20.有效的括号](https://leetcode-cn.com/problems/valid-parentheses/) | [45.跳跃游戏 II](#45跳跃游戏ii)                              | [45.跳跃游戏 II](https://leetcode-cn.com/problems/jump-game-ii/) |
 | [21.合并两个有序链表](#21合并两个有序链表)               | [21.合并两个有序链表](https://leetcode-cn.com/problems/merge-two-sorted-lists/) | [46.全排列](#46全排列)                                       | [46.全排列](https://leetcode-cn.com/problems/permutations/)  |
-| [22.括号生成](#22括号生成)                               | [22.括号生成](https://leetcode-cn.com/problems/generate-parentheses/) | [47.全排列 II](#47.全排列 II)                                | [47.全排列 II](https://leetcode-cn.com/problems/permutations-ii/) |
-| [23.合并K个排序链表](#23合并k个排序链表)                 | [23.合并K个排序链表](https://leetcode-cn.com/problems/merge-k-sorted-lists/) |                                                              |                                                              |
-| [24.两两交换链表中的节点](#24两两交换链表中的节点)       | [24.两两交换链表中的节点](https://leetcode-cn.com/problems/swap-nodes-in-pairs/) |                                                              |                                                              |
-| [25.k个一组翻转链表](#25k个一组翻转链表)                 | [25.k个一组翻转链表](https://leetcode-cn.com/problems/reverse-nodes-in-k-group/) |                                                              |                                                              |
+| [22.括号生成](#22括号生成)                               | [22.括号生成](https://leetcode-cn.com/problems/generate-parentheses/) | [47.全排列 II](#47全排列ii)                                  | [47.全排列 II](https://leetcode-cn.com/problems/permutations-ii/) |
+| [23.合并K个排序链表](#23合并k个排序链表)                 | [23.合并K个排序链表](https://leetcode-cn.com/problems/merge-k-sorted-lists/) | [48.旋转图像](#48旋转图像)                                   | [48.旋转图像](https://leetcode-cn.com/problems/rotate-image/) |
+| [24.两两交换链表中的节点](#24两两交换链表中的节点)       | [24.两两交换链表中的节点](https://leetcode-cn.com/problems/swap-nodes-in-pairs/) | [49.字母异位词分组](#49字母异位词分组)                       | [49.字母异位词分组](https://leetcode-cn.com/problems/group-anagrams/) |
+| [25.k个一组翻转链表](#25k个一组翻转链表)                 | [25.k个一组翻转链表](https://leetcode-cn.com/problems/reverse-nodes-in-k-group/) | [50.Pow(x, n)](#50powxn)                                     | [50.Pow(x, n)](https://leetcode-cn.com/problems/powx-n/)     |
 ### 1.两数之和
 
 #### 题目描述
@@ -2053,7 +2053,576 @@ class Solution {
 }
 ```
 
+### 36.有效的数独
 
+#### 题目描述
+
+判断一个 9x9 的数独是否有效。只需要**根据以下规则**，验证已经填入的数字是否有效即可。
+
+1. 数字 `1-9` 在每一行只能出现一次。
+2. 数字 `1-9` 在每一列只能出现一次。
+3. 数字 `1-9` 在每一个以粗实线分隔的 `3x3` 宫内只能出现一次。
+
+![img](https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Sudoku-by-L2G-20050714.svg/250px-Sudoku-by-L2G-20050714.svg.png)
+
+上图是一个部分填充的有效的数独。
+
+数独部分空格内已填入了数字，空白格用 `'.'` 表示。
+
+**示例 1:**
+
+```
+输入:
+[
+  ["5","3",".",".","7",".",".",".","."],
+  ["6",".",".","1","9","5",".",".","."],
+  [".","9","8",".",".",".",".","6","."],
+  ["8",".",".",".","6",".",".",".","3"],
+  ["4",".",".","8",".","3",".",".","1"],
+  ["7",".",".",".","2",".",".",".","6"],
+  [".","6",".",".",".",".","2","8","."],
+  [".",".",".","4","1","9",".",".","5"],
+  [".",".",".",".","8",".",".","7","9"]
+]
+输出: true
+```
+
+**示例 2:**
+
+```
+输入:
+[
+  ["8","3",".",".","7",".",".",".","."],
+  ["6",".",".","1","9","5",".",".","."],
+  [".","9","8",".",".",".",".","6","."],
+  ["8",".",".",".","6",".",".",".","3"],
+  ["4",".",".","8",".","3",".",".","1"],
+  ["7",".",".",".","2",".",".",".","6"],
+  [".","6",".",".",".",".","2","8","."],
+  [".",".",".","4","1","9",".",".","5"],
+  [".",".",".",".","8",".",".","7","9"]
+]
+输出: false
+解释: 除了第一行的第一个数字从 5 改为 8 以外，空格内其他数字均与 示例1 相同。
+     但由于位于左上角的 3x3 宫内有两个 8 存在, 因此这个数独是无效的。
+```
+
+**说明:**
+
+- 一个有效的数独（部分已被填充）不一定是可解的。
+- 只需要根据以上规则，验证已经填入的数字是否有效即可。
+- 给定数独序列只包含数字 `1-9` 和字符 `'.'` 。
+- 给定数独永远是 `9x9` 形式的。
+
+#### 题解
+
+```java
+class Solution {
+    public boolean isValidSudoku(char[][] board) {
+        // 记录某行中某个数字是否出现过row[所在行][数字]
+        boolean[][] row = new boolean[9][9];
+        // 记录某列中某个数字是否出现过
+        boolean[][] col = new boolean[9][9];
+        // 记录3x3中某个数字是否出现过
+        boolean[][] flag = new boolean[9][9];
+        for(int i=0;i<9;i++){
+            for(int j=0;j<9;j++){
+                if(board[i][j]=='.') continue;
+                int num = board[i][j]-'1';  //char转为int
+                int index = i/3*3 + j/3;    //定位当前数在哪个3x3中
+                if(row[i][num]||col[j][num]||flag[index][num]) return false;
+                row[i][num] = true;
+                col[j][num] = true;
+                flag[index][num] = true;
+            }
+        }
+        return true;
+    }
+}
+```
+
+### 38.报数
+
+#### 题目描述
+
+报数序列是一个整数序列，按照其中的整数的顺序进行报数，得到下一个数。其前五项如下：
+
+```
+1. 1
+2. 11
+3. 21
+4. 1211
+5. 111221
+```
+
+`1` 被读作 ` "one 1"`  (`"一个一"`) , 即 `11`。
+`11` 被读作 `"two 1s"` (`"两个一"`）, 即 `21`。
+` 21` 被读作 `"one 2"`, ` "one 1"` （`"一个二"` ,  `"一个一"`) , 即 `1211`。
+
+给定一个正整数 n（1 ≤ n ≤ 30），输出报数序列的第 n 项。
+
+注意：整数顺序将表示为一个字符串。
+
+**示例 1:**
+
+```
+输入: 1
+输出: "1"
+```
+
+**示例 2:**
+
+```
+输入: 4
+输出: "1211"
+```
+
+#### 题解
+
+```java
+class Solution {
+    public String countAndSay(int n) {
+        if(n<=1) return "1";
+        // 递归得到n-1的String
+        String str = countAndSay(n-1);
+        StringBuilder sb = new StringBuilder(); // 结果
+        int count = 1;          // 统计连续相同数字出现的次数
+        char c = str.charAt(0); // 记录连续相同数字
+        // 遍历n-1的String
+        for(int i=1;i<str.length();i++){
+            if(str.charAt(i)==str.charAt(i-1)) {
+                count++;
+            } else {
+                // 结果加上count个数字
+                sb.append(count).append(c);
+                // 更换当前数字 和 出现的次数
+                c = str.charAt(i);
+                count = 1;
+            }
+        }
+        sb.append(count).append(c);
+        return sb.toString();
+    }
+}
+```
+
+### 39.组合总和
+
+#### 题目描述
+
+给定一个**无重复元素**的数组 `candidates` 和一个目标数 `target` ，找出 `candidates` 中所有可以使数字和为 `target` 的组合。
+
+`candidates` 中的数字可以无限制重复被选取。
+
+**说明：**
+
++ 所有数字（包括 target）都是正整数。
+
++ 解集不能包含重复的组合。
+
+**示例 1:**
+
+```
+输入: candidates = [2,3,6,7], target = 7,
+所求解集为:
+[
+  [7],
+  [2,2,3]
+]
+```
+
+**示例 2:**
+
+```
+输入: candidates = [2,3,5], target = 8,
+所求解集为:
+[
+  [2,2,2,2],
+  [2,3,3],
+  [3,5]
+]
+```
+
+#### 题解
+
+```java
+class Solution {
+    public List<List<Integer>> combinationSum(int[] candidates, int target) {
+        List<List<Integer>> res = new ArrayList();
+        if(candidates==null || candidates.length==0) return res;
+        List<Integer> list = new ArrayList();
+        Arrays.sort(candidates);
+        dfs(res,list,candidates,target,0,0);
+        return res;
+    }
+    public void dfs(List<List<Integer>> res,List<Integer> list,int[] a,int target, int sum,int index){
+        if(sum==target){
+            res.add(new ArrayList(list));
+            return;
+        }
+        for(int i=index;i<a.length;i++){
+            if(sum+a[i]>target) return;
+            list.add(a[i]);
+            dfs(res,list,a,target,sum+a[i],i);
+            list.remove(list.size()-1);
+        }
+    }
+}
+```
+
+### 40.组合总和 II
+
+#### 题目描述
+
+给定一个**无重复元素**的数组 `candidates` 和一个目标数 `target` ，找出 `candidates` 中所有可以使数字和为 `target` 的组合。
+
+`candidates` 中的数字可以无限制重复被选取。
+
+**说明：**
+
+- 所有数字（包括 target）都是正整数。
+
+- 解集不能包含重复的组合。
+
+**示例 1:**
+
+```
+输入: candidates = [10,1,2,7,6,1,5], target = 8,
+所求解集为:
+[
+  [1, 7],
+  [1, 2, 5],
+  [2, 6],
+  [1, 1, 6]
+]
+```
+
+**示例 2:**
+
+```
+输入: candidates = [2,5,2,1,2], target = 5,
+所求解集为:
+[
+  [1,2,2],
+  [5]
+]
+```
+
+#### 题解
+
+```java
+class Solution {
+    public List<List<Integer>> combinationSum2(int[] candidates, int target) {
+        List<List<Integer>> res = new ArrayList();
+        if(candidates==null || candidates.length==0) return res;
+        List<Integer> list = new ArrayList();
+        Arrays.sort(candidates);
+        dfs(res,list,candidates,target,0,0);
+        return res;
+    }
+        public void dfs(List<List<Integer>> res,List<Integer> list,int[] a,int target, int sum,int index){
+        if(sum==target){
+            res.add(new ArrayList(list));
+            return;
+        }
+        if(sum>target || index>=a.length) return;
+        for(int i=index;i<a.length;i++){
+            if(i>index && a[i]==a[i-1]) continue;
+            list.add(a[i]);
+            dfs(res,list,a,target,sum+a[i],i+1);
+            list.remove(list.size()-1);
+        }
+    }
+}
+```
+
+### 41.缺失的第一个正数
+
+#### 题目描述
+
+给定一个未排序的整数数组，找出其中没有出现的最小的正整数。
+
+**示例 1:**
+
+```
+输入: [1,2,0]
+输出: 3
+```
+
+**示例 2:**
+
+```
+输入: [3,4,-1,1]
+输出: 2
+```
+
+**示例 3:**
+
+```
+输入: [7,8,9,11,12]
+输出: 1
+```
+
+**说明:**
+
+你的算法的时间复杂度应为O(n)，并且只能使用常数级别的空间。
+
+#### 题解
+
+```java
+class Solution {
+    public int firstMissingPositive(int[] nums) {
+        for(int i=0;i<nums.length;i++){
+            // 将当前数x放置 数组下标为x-1的位置上
+            while(nums[i]>0 && nums[i]<=nums.length && nums[i]!=nums[nums[i]-1]) {
+                swap(nums,i,nums[i]-1);
+            } 
+        }
+        // 数组下标i位置上的数 值应该为i+1
+        for(int i=0;i<nums.length;i++){
+            if(nums[i]!=i+1) return i+1;
+        }
+        return nums.length+1;
+    }
+    public void swap(int[] a,int i,int j){
+        int temp = a[i];
+        a[i] = a[j];
+        a[j] = temp;
+    }
+}
+```
+
+### 42.接雨水
+
+#### 题目描述
+
+给定 n 个非负整数表示每个宽度为 1 的柱子的高度图，计算按此排列的柱子，下雨之后能接多少雨水。
+
+![](images/question_42.png)
+
+上面是由数组 [0,1,0,2,1,0,1,3,2,1,2,1] 表示的高度图，在这种情况下，可以接 6 个单位的雨水（蓝色部分表示雨水）。
+
+**示例:**
+
+```
+输入: [0,1,0,2,1,0,1,3,2,1,2,1]
+输出: 6
+```
+
+#### 题解
+
+```java
+class Solution {
+    public int trap(int[] height) {
+        if(height==null || height.length<2) return 0;
+        int res=0,left=0,right=0;
+        int i=0,j=height.length-1;
+        while(i<j){
+            if(height[i]<height[j]){
+                // 记录左边最大值
+                left = Math.max(left,height[i]);
+                // 每移动一次 计算高度差
+                res += left - height[i];
+                i++;
+            } else {
+                right = Math.max(right,height[j]);
+                res += right - height[j];
+                j--;
+            }
+        }
+        return res;
+    }
+}
+```
+
+### 43.字符串相乘
+
+#### 题目描述
+
+给定两个以字符串形式表示的非负整数 `num1` 和 `num2`，返回 `num1` 和 `num2` 的乘积，它们的乘积也表示为字符串形式。
+
+**示例 1:**
+
+```
+输入: num1 = "2", num2 = "3"
+输出: "6"
+```
+
+**示例 2:**
+
+```
+输入: num1 = "123", num2 = "456"
+输出: "56088"
+```
+
+**说明：**
+
+1.`num1` 和 `num2` 的长度小于110。
+
+2.`num1` 和 `num2` 只包含数字 0-9。
+
+3.`num1` 和 `num2` 均不以零开头，除非是数字 0 本身。
+4.**不能使用任何标准库的大数类型（比如 BigInteger）或直接将输入转换为整数来处理。**
+
+#### 题解
+
+```java
+class Solution {
+    public String multiply(String num1, String num2) {
+        int n1 = num1.length();
+        int n2 = num2.length();
+        int[] res = new int[n1+n2];
+        for(int i=0;i<n1;i++){
+            for(int j=0;j<n2;j++){
+                //乘积加上 上个进位
+                int num = (num1.charAt(n1-1-i)-'0') * (num2.charAt(n2-1-j)-'0')+res[i+j]; 
+                res[i+j] = num%10;   // 余数
+                res[i+j+1] += num/10; // 进位
+            }
+        }
+        StringBuilder sb = new StringBuilder();
+        int i = res.length-1;
+        // 去除0开头
+        while(i>0 && res[i]==0) i--;
+        while(i>=0){
+            sb.append(res[i]);
+            i--;
+        } 
+        return sb.toString();
+    }
+}
+```
+
+### 44.通配符匹配
+
+#### 题目描述
+
+给定一个字符串 (s) 和一个字符模式 (p) ，实现一个支持 '?' 和 '*' 的通配符匹配。
+
+'?' 可以匹配任何单个字符。
+'*' 可以匹配任意字符串（包括空字符串）。
+两个字符串完全匹配才算匹配成功。
+
+**说明:**
+
+s 可能为空，且只包含从 a-z 的小写字母。
+p 可能为空，且只包含从 a-z 的小写字母，以及字符 ? 和 *。
+**示例 1:**
+
+```
+输入:
+s = "aa"
+p = "a"
+输出: false
+解释: "a" 无法匹配 "aa" 整个字符串。
+```
+
+**示例 2:**
+
+```
+输入:
+s = "aa"
+p = "*"
+输出: true
+解释: '*' 可以匹配任意字符串。
+```
+
+**示例 3:**
+
+```
+输入:
+s = "cb"
+p = "?a"
+输出: false
+解释: '?' 可以匹配 'c', 但第二个 'a' 无法匹配 'b'。
+```
+
+**示例 4:**
+
+```
+输入:
+s = "adceb"
+p = "*a*b"
+输出: true
+解释: 第一个 '*' 可以匹配空字符串, 第二个 '*' 可以匹配字符串 "dce".
+```
+
+**示例 5:**
+
+```
+输入:
+s = "acdcb"
+p = "a*c?b"
+输入: false
+```
+
+#### 题解
+
+```java
+class Solution {
+    public boolean isMatch(String s, String p) {
+        boolean[][] dp = new boolean[s.length()+1][p.length()+1];
+        dp[0][0] = true;
+        for(int i=0;i<=s.length();i++){
+            for(int j=1;j<=p.length();j++){
+                if(p.charAt(j-1)=='*'){
+                    dp[i][j] = (i>0 &&dp[i-1][j]) || dp[i][j-1];
+                } else{
+                    dp[i][j] = i>0 && dp[i-1][j-1] && (s.charAt(i-1) == p.charAt(j-1) || p.charAt(j-1) == '?');
+                }
+            }
+        }
+        return dp[s.length()][p.length()];
+    }
+}
+```
+
+### 45.跳跃游戏 II
+
+#### 题目描述
+
+给定一个非负整数数组，你最初位于数组的第一个位置。
+
+数组中的每个元素代表你在该位置可以跳跃的最大长度。
+
+你的目标是使用最少的跳跃次数到达数组的最后一个位置。
+
+**示例:**
+
+```
+输入: [2,3,1,1,4]
+输出: 2
+解释: 跳到最后一个位置的最小跳跃数是 2。
+     从下标为 0 跳到下标为 1 的位置，跳 1 步，然后跳 3 步到达数组的最后一个位置。
+```
+
+**说明:**
+
+假设你总是可以到达数组的最后一个位置。
+
+#### 题解
+
+```java
+class Solution {
+    public int jump(int[] nums) {
+        if(nums.length<2) return 0;
+        int step = 0;
+        int right = nums[0];
+        int index = 0;
+        for(int i=0;i<nums.length;i++){
+            // 寻找当前范围内 下一步能跳最远的点
+            right = Math.max(right,i+nums[i]);
+            if(right>=nums.length-1) return step+1;
+            // 到达 当前范围内 下一步跳的最远的地方
+            if(i==index){
+                step++;
+                index = right;
+            }
+        }
+        return step;
+    }
+}
+```
 
 ### 46.全排列
 
@@ -2153,6 +2722,192 @@ class Solution {
             flag[i] = false;
             list.remove(list.size()-1);
         }
+    }
+}
+```
+
+### 48.旋转图像
+
+#### 题目描述
+
+给定一个 n × n 的二维矩阵表示一个图像。
+
+将图像顺时针旋转 90 度。
+
+**说明：**
+
+你必须在原地旋转图像，这意味着你需要直接修改输入的二维矩阵。请不要使用另一个矩阵来旋转图像。
+
+**示例 1:**
+
+```
+给定 matrix = 
+[
+  [1,2,3],
+  [4,5,6],
+  [7,8,9]
+],
+
+原地旋转输入矩阵，使其变为:
+[
+  [7,4,1],
+  [8,5,2],
+  [9,6,3]
+]
+```
+
+**示例 2:**
+
+```
+给定 matrix =
+[
+  [ 5, 1, 9,11],
+  [ 2, 4, 8,10],
+  [13, 3, 6, 7],
+  [15,14,12,16]
+], 
+
+原地旋转输入矩阵，使其变为:
+[
+  [15,13, 2, 5],
+  [14, 3, 4, 1],
+  [12, 6, 8, 9],
+  [16, 7,10,11]
+]
+```
+
+#### 题解
+
+```java
+class Solution {
+    public void rotate(int[][] matrix) {
+        int n = matrix.length;
+        // 先延y方向 中心对称翻转
+        for(int i=0;i<n;i++){
+            for(int j=0;j<n/2;j++){
+                // 交换 matrix[i][j]和matrix[i][n-1-j] 
+                int temp = matrix[i][j];
+                matrix[i][j] = matrix[i][n-1-j];
+                matrix[i][n-1-j] = temp;
+            }
+        }
+        // 延左上角和右下角的方向 对称翻转
+        for(int i=0;i<n;i++){
+            for(int j=0;j<n-1-i;j++){
+                // 交换 matrix[i][j]和matrix[n-1-j][n-1-i] 
+                int temp = matrix[i][j];
+                matrix[i][j] = matrix[n-1-j][n-1-i];
+                matrix[n-1-j][n-1-i] = temp;
+            }
+        }
+    }
+}
+```
+
+### 49.字母异位词分组
+
+#### 题目描述
+
+给定一个字符串数组，将字母异位词组合在一起。字母异位词指字母相同，但排列不同的字符串。
+
+**示例:**
+
+```
+输入: ["eat", "tea", "tan", "ate", "nat", "bat"],
+输出:
+[
+  ["ate","eat","tea"],
+  ["nat","tan"],
+  ["bat"]
+]
+```
+
+**说明：**
+
+* 所有输入均为小写字母。
+
+* 不考虑答案输出的顺序。
+
+#### 题解
+
+```java
+class Solution {
+    public List<List<String>> groupAnagrams(String[] strs) {
+        List<List<String>> res = new ArrayList();
+        // key:字符串对象 value:该字符串存放在res中的第几个list中
+        HashMap<String,Integer> map = new HashMap();
+        if(strs==null || strs.length<1) return res;
+        // 遍历字符串数组
+        for(String str : strs){
+            // 将每个字符串 按字典序重新组合
+            char[] ch = str.toCharArray();
+            Arrays.sort(ch);
+            String s = new String(ch);
+            if(map.containsKey(s)){
+                List<String> list = res.get(map.get(s));
+                list.add(str);
+            }else{
+                // map中没有 创建新的list
+                List<String> list = new ArrayList();
+                list.add(str);
+                // map中str的value为res最后一个位置的index
+                map.put(s,res.size());
+                res.add(list);
+            }
+        }
+        return res;
+    }
+}
+```
+
+### 50.Pow(x, n)
+
+#### 题目描述
+
+实现 pow(x, n) ，即计算 x 的 n 次幂函数。
+
+**示例 1:**
+
+```
+输入: 2.00000, 10
+输出: 1024.00000
+```
+
+**示例 2:**
+
+```
+输入: 2.10000, 3
+输出: 9.26100
+```
+
+**示例 3:**
+
+```
+输入: 2.00000, -2
+输出: 0.25000
+解释: 2-2 = 1/22 = 1/4 = 0.25
+```
+
+**说明:**
+
+* -100.0 < x < 100.0
+
+* n 是 32 位有符号整数，其数值范围是 [−231, 231 − 1] 。
+
+#### 题解
+
+```java
+class Solution {
+    public double myPow(double x, int n) {
+        double res = 1.0;
+        // n 可正可负 最后i=0
+        for(int i=n;i!=0;i/=2){
+            // 奇数 x^n = x^(n/2)*x^(n/2)*x
+            if(i%2!=0) res*=x;
+            // x^(2n) = (x^n) * (x^n)
+            x*=x;
+        }
+        return n>=0?res:1/res;
     }
 }
 ```
